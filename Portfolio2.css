@@ -1,0 +1,142 @@
+/* Estilos Globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #181818; /* Cor de fundo escura */
+    color: #F8F7F2; /* Texto claro para contraste */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #91805b; /* Tons de dourado/bege */
+    margin: 0;
+}
+
+a {
+    color: #4b4e49; /* Cinza esverdeado */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar fixa */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Largura da sidebar */
+    height: 100%; /* Altura total da página */
+    background-color: #181818; /* Fundo escuro */
+    color: #F8F7F2; /* Texto claro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+}
+
+.sidebar .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #91805b; /* Cor do título da logo */
+}
+
+.sidebar nav {
+    width: 100%;
+}
+
+.sidebar .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar .nav-links li {
+    text-align: center;
+}
+
+.sidebar .nav-links a {
+    color: #F8F7F2;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.sidebar .nav-links a:hover {
+    color: #91805b; /* Efeito hover */
+}
+
+/* Conteúdo principal */
+.container {
+    margin-left: 270px; /* Ajuste o conteúdo principal para não sobrepor a sidebar */
+    padding: 20px;
+    width: calc(100% - 270px); /* Reduz a largura com base na sidebar */
+    max-width: 1200px;
+}
+
+/* Seções */
+.section {
+    padding: 50px 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #F8F7F2;
+}
+
+/* Conteúdo do Resumo e Habilidades */
+.resume-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.resume-item {
+    flex: 1;
+    min-width: 300px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #4b4e49; /* Cinza esverdeado */
+    color: #F8F7F2;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.skills-list li:hover {
+    background-color: #91805b; /* Destaque ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #181818;
+    color: #F8F7F2;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #4b4e49;
+}
+
+footer a {
+    color: #4b4e49;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #91805b;
+}
